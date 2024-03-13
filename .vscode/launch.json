@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/verilog_sem04/Behavioral_Level",
-      "program": "e:/verilog_sem04/Behavioral_Level/build/Debug/outDebug",
+      "cwd": "e:/verilog_sem04/Gate_Level",
+      "program": "e:/verilog_sem04/Gate_Level/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

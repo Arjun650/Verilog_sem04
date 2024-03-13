@@ -1,35 +1,10 @@
-module circuit01(A, B, C ,X); 
+module circuit01(A, B, C, D);
 input A, B, C; 
-output X; 
-reg X; 
-reg w1 , w2; 
-always @(A or B or C)
-begin 
-    if( A == 1'b1)
-    begin
-        w1 = 1'b0;
-    end
-    else
-    begin
-        w1 = 1'b1;  
-    end    
-    if( B == 1'b0 && C == 1'b0)
-    begin
-        w2 = 1'b0; 
-    end
-    else
-    begin 
-        w2 = 1'b1; 
-    end  
-    if(w1== 1'b1 && w2 == 1'b1) 
-    begin
-        X= 1'b0;
-    end
-    else
-    begin
-       X= 1'b1;
-    end
-end
+output D; 
+wire w1 , w2; 
+not a1(w1 , A);
+or a2(w2 , B, C);
+nand a3(D, w1 , w2); 
 endmodule
 
 module test; 
