@@ -27,4 +27,4 @@ $monitor ("Time= %0t , S= %b , A = %b , B = %b , Y = %b", $time ,S,  A0 , A1 ,  
 #5 S = 1'b1 ; A0 = 1'b1 ; A1 = 1'b1; 
 
 end
-endmodule
+endmodule 
