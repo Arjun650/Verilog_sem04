@@ -13,7 +13,6 @@ endmodule
 module testMux2to1; 
 reg A0, A1, S; 
 wire Y; 
-
 mux2to1 i(A0, A1, S, Y); 
 
 initial 
